@@ -1,0 +1,128 @@
+Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = 5e3
+>>> b = str(4e3)
+>>> b
+'4000.0'
+>>> type(b)
+<class 'str'>
+>>> type(a)
+<class 'float'>
+>>> a
+5000.0
+>>> c = 3
+>>> c
+3
+>>> type(c)
+<class 'int'>
+>>> type(False)
+<class 'bool'>
+>>> type(4e3)
+<class 'float'>
+>>> isinstance(True,int)
+True
+>>> d = isinstance(True,int)
+>>> d
+True
+>>> a
+5000.0
+>>> isinstance(a,float)
+True
+>>> isinstance(a,str)
+False
+>>> ininstance(a,int)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    ininstance(a,int)
+NameError: name 'ininstance' is not defined
+>>> isinstance(a,int)
+False
+>>> a
+5000.0
+>>> isinstance(True,bool)
+True
+>>> isinstance(True,float)
+False
+>>> a = 5
+>>> a += 3
+>>> a
+8
+>>> b = 4
+>>> a -= b
+>>> a
+4
+>>> a = v = b = c = 4
+>>> b
+4
+>>> a += b
+>>> a
+8
+>>> b -= v
+>>> b
+0
+>>> v *= c
+>>> b
+0
+>>> v
+16
+>>> b = 4
+>>> b
+4
+>>> b /= c
+>>> b
+1.0
+>>> b = 4
+>>> c = 3
+>>> b /= c
+>>> b
+1.3333333333333333
+>>> b = 4
+>>> c
+3
+>>> b //= c
+>>> b
+1
+>>> 4.3 // 3
+1.0
+>>> 4 // 3
+1
+>>> 4 % 3
+1
+>>> 5 %3
+2
+>>> 3 ** 3
+27
+>>> 2 ** 3
+8
+>>> -3 * 2 + 5 / -2 - 4
+-12.5
+>>>   3 < 4 and 4 < 5
+  
+SyntaxError: unexpected indent
+>>> 3 < 4 and 4 < 5
+True
+>>> 3 ** -2
+0.1111111111111111
+>>> 1 not 2
+SyntaxError: invalid syntax
+>>> 1 not
+SyntaxError: invalid syntax
+>>> not True
+False
+>>> not False
+True
+>>> not 0
+True
+>>> not
+SyntaxError: invalid syntax
+>>> not 5
+False
+>>> 3<5<6
+True
+>>> 3<5>not
+SyntaxError: invalid syntax
+>>> 3<5>4
+True
+>>> 3<5<4
+False
+>>> 
